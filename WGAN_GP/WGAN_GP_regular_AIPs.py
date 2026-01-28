@@ -18,7 +18,7 @@ MAX_TOKENS = MAX_LEN_TRAIN + 1  # +1 for EOS slot
 # Desired output length range
 MIN_LEN_OUT = 5
 MAX_LEN_OUT = 10
-N_GENERATE = 300
+N_GENERATE = 1000
 
 # WGAN-GP hyperparams (reasonable for N~372)
 NOISE_DIM = 64
