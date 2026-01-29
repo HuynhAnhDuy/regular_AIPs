@@ -1,0 +1,3 @@
+k = 3
+max_len_kmer = 52
+vocab_size = 6716

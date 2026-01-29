@@ -126,9 +126,9 @@ def run_stacking(X_train, y_train, X_test, y_test, n_repeats=3):
 # ====== Main Execution ======
 def main():
     # Đọc dữ liệu
-    X_train_df = pd.read_csv("AIP_x_train_onehot_esm.csv", index_col=0)
+    X_train_df = pd.read_csv("AIP_x_train_onehot.csv", index_col=0)
     y_train = pd.read_csv("AIP_y_train.csv")["Label"].values
-    X_test_df = pd.read_csv("AIP_x_test_onehot_esm.csv", index_col=0)
+    X_test_df = pd.read_csv("AIP_x_test_onehot.csv", index_col=0)
     y_test = pd.read_csv("AIP_y_test.csv")["Label"].values
 
     X_train = X_train_df.values
