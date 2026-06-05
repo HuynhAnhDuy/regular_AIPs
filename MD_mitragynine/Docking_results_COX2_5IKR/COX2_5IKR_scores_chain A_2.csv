@@ -1,0 +1,3 @@
+ligand,best_pose_rank,affinity (kcal/mol),Ki_estimated (M)
+Ligand_1,1,1.280,8.658e+00
+Ligand_control_ID8,1,-8.119,1.132e-06

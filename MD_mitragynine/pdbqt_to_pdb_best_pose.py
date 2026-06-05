@@ -4,8 +4,8 @@ from pathlib import Path
 from openbabel import openbabel
 
 # ==== Cấu hình ====
-INPUT_DIR = Path("/home/andy/andy/regular_AIPs/molecular_docking/Best_pose_pdbqt")   # thư mục chứa các ligand_out.pdbqt
-OUTPUT_DIR = Path("/home/andy/andy/regular_AIPs/molecular_docking/Best_pose_pdb")    # thư mục lưu file .pdb sau khi convert
+INPUT_DIR = Path("/home/andy/andy/regular_AIPs/MD_mitragynine/Best_pose_pdbqt")   # thư mục chứa các ligand_out.pdbqt
+OUTPUT_DIR = Path("/home/andy/andy/regular_AIPs/MD_mitragynine/Best_pose_pdb")    # thư mục lưu file .pdb sau khi convert
 OUTPUT_DIR.mkdir(exist_ok=True)
 
 def extract_first_pose(in_file: Path, tmp_file: Path):

@@ -4,13 +4,13 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
 # ==== Cấu hình ====
-RECEPTOR = "/home/andy/andy/regular_AIPs/molecular_docking/Protein_clean/COX2_5IKR_clean.pdbqt"
-LIG_DIR = Path("/home/andy/andy/regular_AIPs/molecular_docking/ligands_COX2_5IKR")
-OUT_DIR = Path("/home/andy/andy/regular_AIPs/molecular_docking/Docking_results_COX2_5IKR")
+RECEPTOR = "/home/andy/andy/regular_AIPs/MD_mitragynine/Protein_clean/COX2_5IKR_clean.pdbqt"
+LIG_DIR = Path("/home/andy/andy/regular_AIPs/MD_mitragynine/ligands_COX2_5IKR")
+OUT_DIR = Path("/home/andy/andy/regular_AIPs/MD_mitragynine/Docking_results_COX2_5IKR")
 OUT_DIR.mkdir(exist_ok=True, parents=True)
 
 # Hộp docking (Å)
-CENTER = (39.436, 20.551, 73.702)
+CENTER = (40.460, 38.593, 86.126)
 SIZE   = (22, 22, 22)
 
 # Tham số Vina
@@ -35,8 +35,8 @@ def calc_Ki(deltaG_kcal):
 
 def run_vina(lig_path: Path):
     lig_base = lig_path.stem
-    out_pose = OUT_DIR / f"{lig_base}_out.pdbqt"
-    out_log  = OUT_DIR / f"{lig_base}.log"
+    out_pose = OUT_DIR / f"{lig_base}_out_chain B_2.pdbqt"
+    out_log  = OUT_DIR / f"{lig_base}_chain B_2.log"
 
     cmd = [
         VINA_BIN,
@@ -94,7 +94,7 @@ def main():
                 all_results.append(best_pose)
 
     # Xuất CSV (chỉ pose tốt nhất cho mỗi ligand)
-    csv_path = OUT_DIR / "COX2_5IKR_scores.csv"
+    csv_path = OUT_DIR / "COX2_5IKR_scores_chain B_5.csv"
     with open(csv_path, "w", newline="", encoding="utf-8") as fw:
         writer = csv.writer(fw)
         writer.writerow(["ligand", "best_pose_rank", "affinity (kcal/mol)", "Ki_estimated (M)"])

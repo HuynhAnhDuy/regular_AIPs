@@ -3,7 +3,7 @@ import numpy as np
 import os
 import pandas as pd
 
-protein_dir = "/home/andy/andy/Inflam_NP/molecular_docking/Protein_original"
+protein_dir = "/home/andy/andy/regular_AIPs/MD_mitragynine/Protein_original"
 
 ligand_map = {
     "COX1_1EQH.pdb": "FLP",
@@ -91,5 +91,5 @@ for pdb_file, resname in ligand_map.items():
         "note": warn
     })
 
-pd.DataFrame(rows).to_csv("grid_centers_2.csv", index=False)
+pd.DataFrame(rows).to_csv("grid_centers_05062026.csv", index=False)
 print("\n[DONE] Results saved to grid_centers.csv")
