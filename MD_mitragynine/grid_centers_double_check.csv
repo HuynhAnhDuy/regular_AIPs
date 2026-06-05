@@ -1,0 +1,6 @@
+Protein,Ligand,canonical_smiles,Label,center_x,center_y,center_z,search_x,search_y,search_z,volume,note,PyMOL,center_x,center_y,center_z,search_x,search_y,search_z
+COX1_1EQH.pdb,FLP,CC(C(=O)O)c1ccc(-c2ccccc2)c(F)c1,1,26.413,33.341,198.597,12.21,15.04,16.38,3006,OK,"47.467,  27.863, 193.272",47.0183,33.5051,180.672,102.6413,74.7215,77.7831
+COX2_3LN1.pdb,CEL,Cc1ccc(-c2cc(C(F)(F)F)nn2-c2ccc(S(N)(=O)=O)cc2)cc1,1,30.597,-22.559,-15.758,18.44,13.46,16.9,4196,OK,"48.103, -33.803,  18.479",48.1391,33.8036,25.3317,110.5354,90.9893,139.8682
+COX2_5IKR.pdb,ID8,Cc1cccc(Nc2ccccc2C(=O)O)c1C,1,38.449,1.797,61.125,15.79,12.84,16.72,3391,OK,"39.436,  20.551,  73.702",33.2786,23.3539,70.0943,75.955,92.5126,88.1874
+5LOX_6NCF.pdb,AF7,CC(=O)O[C@@H]1CC[C@@]2(C)[C@@H](CC[C@]3(C)[C@@H]2C(=O)C=C2[C@@H]4[C@@H](C)[C@H](C)CC[C@]4(C)CC[C@]23C)[C@@]1(C)C(=O)O,1,11.079,-22.165,-18.409,24.81,13.29,15.69,5171,OK,"11.041, -22.216, -18.915",39.9437,-45.604,4.9033,134.8249,106.2853,115.5965
+mPGES1_5TL9.pdb,7DN,Cc1cccc2ccc(N3CCC(C(=O)N[C@H]4CCC[C@H]4CCc4ccccc4C(=O)O)CC3)nc12,1,7.773,-18.011,27.206,11.76,20.31,22.26,5317,OK,"7.753, -17.372,  28.244",,,,,,
